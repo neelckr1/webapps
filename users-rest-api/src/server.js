@@ -14,6 +14,9 @@ app.get('/', (req, res) => res.send('API is running'));
 const userRoutes = require('./routes/users');
 app.use('/users', userRoutes);
 
+const groupRoutes = require('./routes/groups');
+app.use('/groups', groupRoutes);
+
 app.listen(3000, () => console.log('Server running on port 3000'));
 
 module.exports = app;
